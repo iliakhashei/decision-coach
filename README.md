@@ -1,36 +1,121 @@
-# Decision Coach
+# Decision Coach 🧠
 
-Decision Coach is an AI-powered decision support system that helps users think through complex choices, receive structured recommendations, log outcomes, and identify behavioral patterns over time.
+AI-powered decision support system that helps you think through complex choices, generate structured recommendations, and learn from your past decisions over time.
 
-## Features
+---
 
-- Create and store decisions
-- Generate clarifying questions with an LLM
-- Produce structured recommendations
-- Save answers and recommendations for later review
-- Log real outcomes
-- Detect recurring behavioral patterns
-- Browse decision history and details
-- Basic user authentication
+## 🚀 Overview
 
-## Stack
+Decision Coach guides users through a complete decision-making loop:
 
-- **Frontend:** Next.js, React, TypeScript
-- **Backend:** FastAPI, SQLAlchemy, Pydantic
-- **Database:** SQLite
-- **LLM runtime:** Ollama / local model setup
+1. Describe a decision
+2. Answer clarifying questions
+3. Receive a structured recommendation
+4. Log the outcome
+5. Discover behavioral patterns over time
 
-## How it works
+The system uses an LLM to generate insights and continuously improves based on your decisions and outcomes.
 
-1. User registers and logs in
-2. User submits a decision
-3. The app generates clarifying questions
-4. The user answers them
-5. The system produces a recommendation
-6. The user logs the outcome later
-7. The app analyzes past outcomes to infer patterns
+---
 
-## Notes
+## ✨ Features
 
-This is an MVP focused on the full decision-support loop:
-decision → clarification → recommendation → outcome → pattern analysis.
+- 🔐 User authentication (register & login)
+- 🧾 Decision creation and tracking
+- 🤖 AI-generated clarifying questions
+- 🧠 Structured recommendations (summary, risks, reasoning)
+- 📊 Outcome logging and reflection
+- 🔁 Pattern detection from past behavior
+- 📚 Decision history overview
+
+---
+
+## 🖼️ Screenshots
+
+### Home
+![Home](docs/screenshots/home.png)
+
+### New Decision
+![New Decision](docs/screenshots/new-decision.png)
+
+### Clarifying Questions
+![Questions](docs/screenshots/questions.png)
+
+### Recommendation
+![Recommendation](docs/screenshots/recommendation.png)
+
+### Patterns
+![Patterns](docs/screenshots/patterns.png)
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- Next.js
+- React
+- TypeScript
+
+**Backend**
+- FastAPI
+- SQLAlchemy
+- Pydantic
+
+**Database**
+- SQLite
+
+**AI / LLM**
+- Ollama (local model inference)
+
+---
+
+## ⚙️ Setup
+
+### 1. Clone the repository
+
+
+git clone https://github.com/iliakhashaei/decision-coach.git
+cd decision-coach
+
+### 2. Backend setup
+
+cd backend
+python -m venv .venv
+.venv\Scripts\activate   # Windows
+pip install -r requirements.txt
+
+Create a .env file based on .env.example:
+
+copy .env.example .env   # Windows
+
+Run the backend:
+
+uvicorn app.main:app --reload
+
+### 3. Frontend setup
+
+cd frontend
+npm install
+npm run dev
+
+## 🔄 How It Works
+The user submits a decision
+The system generates clarifying questions using an LLM
+Answers are used to generate a recommendation
+The user logs the real outcome later
+The system analyzes past outcomes to detect behavioral patterns
+
+## 📌 Notes
+This project is an MVP focused on the full decision lifecycle
+LLM responses are structured and parsed into usable outputs
+Patterns are inferred from historical outcomes and reflections
+
+## Future Improvements
+Better pattern aggregation across multiple decisions
+Personalized recommendations based on user history
+UI/UX enhancements
+Deployment (Docker / cloud)
+
+## License
+No license specified yet.
+
