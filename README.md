@@ -28,25 +28,25 @@ The system uses an LLM to generate insights and continuously improves based on y
 - 🔁 Pattern detection from past behavior
 - 📚 Decision history overview
  
- 
+
 ---
 
 ## 🖼️ Screenshots
 
 ### Home
-![Home](docs/screenshots/home.png)
+![Home](docs/Screenshots/home.png)
 
 ### New Decision
-![New Decision](docs/screenshots/new-decision.png)
+![New Decision](docs/Screenshots/new-decision.png)
 
 ### Clarifying Questions
-![Questions](docs/screenshots/questions.png)
+![Questions](docs/Screenshots/questions.png)
 
 ### Recommendation
-![Recommendation](docs/screenshots/recommendation.png)
+![Recommendation](docs/Screenshots/recommendation.png)
 
 ### Patterns
-![Patterns](docs/screenshots/patterns.png)
+![Patterns](docs/Screenshots/patterns.png)
 
 ---
 
