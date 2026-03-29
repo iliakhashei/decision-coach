@@ -27,7 +27,8 @@ The system uses an LLM to generate insights and continuously improves based on y
 - 📊 Outcome logging and reflection
 - 🔁 Pattern detection from past behavior
 - 📚 Decision history overview
-
+ 
+ 
 ---
 
 ## 🖼️ Screenshots
