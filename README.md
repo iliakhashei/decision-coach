@@ -75,7 +75,7 @@ The system uses an LLM to generate insights and continuously improves based on y
 ### 1. Clone the repository
 
 
-git clone https://github.com/iliakhashaei/decision-coach.git
+git clone https://github.com/iliakhashei/decision-coach
 cd decision-coach
 
 ### 2. Backend setup
@@ -96,7 +96,9 @@ uvicorn app.main:app --reload
 ### 3. Frontend setup
 
 cd frontend
+
 npm install
+
 npm run dev
 
 ## 🔄 How It Works
